@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Med-Company</title>
+</head>
+<body>
+    <header class="container-topo">
+        <h3>Med Company</h3>
+    </header>
+    <main class="container-conteudo">
+        <section class="container-conteudo-titulo">
+            <h1>Formulário de exame</h1>
+            <p>Preencha o formulário abaixo com suas informações.</p>
+
+        </section>
+        <form class="container-form ">
+            <div class="container-form-conteudos">
+                <label for="">Nome</label> <br><br>
+                <input type="text" name="nome" required><br>
+            </div><br>
+            <div class="container-form-conteudos">
+                <label for="">Data de Nascimento</label> <br> <br>
+                <input type="date" name="data" min="2000-01-01" max="2023-01-01" required>
+            </div><br>
+            <div class="container-form-conteudos">
+                <label for="">Email</label> <br><br>
+                <input type="email" name="email" placeholder="exemplo@email.com" required>
+            </div><br>
+
+            <div class="container-radio">
+                <h3>Você possui tatuagem</h3>
+                <input type="radio" name="resposta" id="resposta-sim" value="sim" required>
+                <label for="resposta-sim">Sim</label> <br>
+                <input type="radio" name="resposta" id="resposta-nao" value="nao">
+                <label for="resposta-nao">Não</label>
+            </div>
+
+            <div class="container-radio">
+                <h3>Ultima vez que doou sangue?</h3>
+                <input type="radio" name="opcao" id="opcao-meses" value="meses" required>
+                <label for="opcao-meses">Nos ultimos 6 meses</label><br>
+                <input type="radio" name="opcao" id="opcao-anual" value="anual">
+                <label for="opcao-anual">Há 1 ano ou mais</label><br>
+                <input type="radio" name="opcao" id="opcao-nunca" value="nunca">
+                <label for="opcao-nunca">Nunca doei snague</label><br>
+            </div>
+            <button type="submit">Enviar Formulário</button>
+
+        </form>
+
+    </form>
+    <footer>
+        <h3>Copyright 2023 MedCompany</h3>
+    </footer>
+    
+</body>
+</html>
